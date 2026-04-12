@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Support & Contact — Lumi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/src/style.css" />
+  <style>
+    .faq-item {
+      background: var(--color-surface);
+      border-radius: var(--radius-md);
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+    .faq-item h3 {
+      margin-bottom: 0.5rem;
+      color: var(--color-primary);
+    }
+    .contact-card {
+      background: linear-gradient(135deg, var(--color-peach-light), var(--color-bg));
+      border: 1px solid var(--color-peach);
+      border-radius: var(--radius-lg);
+      padding: 3rem;
+      text-align: center;
+      margin: 4rem 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <a href="/" class="logo"><span>✨</span> Lumi</a>
+        <ul class="nav-links">
+          <li><a href="/">Home</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#data-deletion">Delete Account</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="legal-content">
+    <h1>Support & Help Center</h1>
+    <p>Need help with Lumi? Check our frequently asked questions below or get in touch with our team.</p>
+
+    <section id="faq">
+      <h2>Frequently Asked Questions</h2>
+      
+      <div class="faq-item">
+        <h3>How do I link with my partner?</h3>
+        <p>Once you sign up, you'll receive a unique Invitation Code. Share this code with your partner. When they enter it in their Lumi app, your accounts will be synchronized!</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>Are my memories private?</h3>
+        <p>Yes. Your memories, missions, and messages are only visible to you and your linked partner. We use industry-standard encryption to keep your data safe.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>How do I restore my purchases?</h3>
+        <p>If you've upgraded to Lumi Premium or bought coins, you can restore them by going to Settings > Restore Purchases. Make sure you're logged into the same Apple ID used for the original purchase.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>Can I use Lumi for free?</h3>
+        <p>Absolutely! The core features of Lumi, including daily missions and memory sharing, are available for free. We offer Premium features and cosmetic coin packs for those who want to enhance their experience.</p>
+      </div>
+    </section>
+
+    <section id="data-deletion" style="margin-top: 5rem; padding-top: 5rem; border-top: 1px solid var(--color-surface-raised);">
+      <h2>Account & Data Deletion</h2>
+      <p>We respect your right to be forgotten. If you wish to delete your account and all associated data, there are two ways to do so:</p>
+      
+      <h3>1. In-App Deletion (Recommended)</h3>
+      <p>Go to <strong>Settings > Account > Delete Account</strong>. Follow the prompts to confirm your decision. This will immediately stop all services and schedule your data for permanent deletion.</p>
+
+      <h3>2. Email Request</h3>
+      <p>If you cannot access the app, please send an email to <span class="site-config-supportEmail"></span> from the email address associated with your account with the subject line "Account Deletion Request".</p>
+
+      <p><strong>What happens when I delete my account?</strong></p>
+      <ul>
+        <li>Your profile and partner link will be removed.</li>
+        <li>All uploaded photos (Memories) and mission progress will be deleted.</li>
+        <li>Your coin balance and active subscriptions will be cancelled (note: subscriptions must also be managed via Apple ID settings).</li>
+        <li>This action is irreversible after 30 days.</li>
+      </ul>
+    </section>
+
+    <div class="contact-card">
+      <h2>Still have questions?</h2>
+      <p>Our support team typically responds within 1-2 business days.</p>
+      <div style="margin-top: 2rem;">
+        <a href="mailto:support@lumi.app" class="btn btn-primary site-config-mailto">Email Support</a>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-bottom">
+        <p>&copy; 2026 <span class="site-config-companyName"></span>. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module">
+    import { SITE_CONFIG } from './src/config.js';
+    
+    document.querySelectorAll('.site-config-supportEmail').forEach(el => el.textContent = SITE_CONFIG.supportEmail);
+    document.querySelectorAll('.site-config-companyName').forEach(el => el.textContent = SITE_CONFIG.companyName);
+    document.querySelectorAll('.site-config-mailto').forEach(el => el.href = `mailto:${SITE_CONFIG.supportEmail}`);
+  </script>
+</body>
+</html>

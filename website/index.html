@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lumi — Better Together</title>
+  <meta name="description" content="Lumi is the ultimate relationship app for couples. Share memories, complete daily missions, and grow closer every day." />
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Lumi — Better Together" />
+  <meta property="og:description" content="The ultimate relationship companion for couples. Missions, memories, and more." />
+  <meta property="og:image" content="/og-image.png" />
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:title" content="Lumi — Better Together" />
+  <meta property="twitter:description" content="The ultimate relationship companion for couples. Missions, memories, and more." />
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <div class="logo">
+          <span>✨</span> Lumi
+        </div>
+        <ul class="nav-links">
+          <li><a href="#features">Features</a></li>
+          <li><a href="/support.html">Support</a></li>
+          <li><a href="[APP_STORE_URL]" class="btn btn-primary" style="padding: 0.5rem 1.5rem;">Download</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>Connect deeper with your partner.</h1>
+        <p>Lumi helps you build lasting habits, share beautiful memories, and stay synchronized with your favorite person.</p>
+        <div class="hero-actions">
+          <a href="[APP_STORE_URL]" class="btn btn-primary">Download on App Store</a>
+        </div>
+        <div class="hero-image" style="margin-top: 4rem;">
+          <img src="/mascot.png" alt="Lumi Mascot" style="max-width: 100%; height: auto; border-radius: var(--radius-lg); box-shadow: 0 20px 40px rgba(0,0,0,0.1);">
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="features">
+      <div class="container">
+        <h2 style="text-align: center; margin-bottom: 3rem;">Designed for Modern Couples</h2>
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="icon">🚀</div>
+            <h3>Daily Missions</h3>
+            <p>Engaging tasks designed to spark conversation and create shared moments every day.</p>
+          </div>
+          <div class="feature-card">
+            <div class="icon">📸</div>
+            <h3>Shared Timeline</h3>
+            <p>Capture and organize your most precious memories in a beautiful, private space.</p>
+          </div>
+          <div class="feature-card">
+            <div class="icon">🌈</div>
+            <h3>Mood Sync</h3>
+            <p>Stay aware of your partner's energy and mood to support each other better.</p>
+          </div>
+          <div class="feature-card">
+            <div class="icon">🎁</div>
+            <h3>Gift Shop</h3>
+            <p>Earn coins through missions and exchange them for cute digital gifts for your partner.</p>
+          </div>
+          <div class="feature-card">
+            <div class="icon">❓</div>
+            <h3>Daily Questions</h3>
+            <p>Get to know each other on a deeper level with thought-provoking relationship prompts.</p>
+          </div>
+          <div class="feature-card">
+            <div class="icon">🔔</div>
+            <h3>Smart Notifications</h3>
+            <p>Never miss a mission or a memory update with timely, gentle reminders.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-info">
+          <div class="logo footer-logo">✨ Lumi</div>
+          <p style="color: var(--color-text-muted); max-width: 300px;">Making relationships stronger, one mission at a time. Designed with love for couples worldwide.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Product</h4>
+          <ul>
+            <li><a href="#features">Features</a></li>
+            <li><a href="/support.html">Support</a></li>
+            <li><a href="[APP_STORE_URL]">App Store</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="/privacy.html">Privacy Policy</a></li>
+            <li><a href="/terms.html">Terms of Use</a></li>
+            <li><a href="/support.html#data-deletion">Delete Data</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 [COMPANY_NAME]. All rights reserved.</p>
+        <p style="margin-top: 0.5rem; font-size: 0.7rem;">Disclaimer: This website and its content are for informational purposes only.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module">
+    import { SITE_CONFIG } from './src/config.js';
+    
+    // Update placeholders
+    document.querySelectorAll('[href="[APP_STORE_URL]"]').forEach(el => el.href = SITE_CONFIG.appStoreUrl);
+    document.querySelectorAll('footer .footer-bottom p')[0].innerHTML = `&copy; ${new Date().getFullYear()} ${SITE_CONFIG.companyName}. All rights reserved.`;
+
+    // Dark mode simple toggle (manual for now or based on system)
+    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+       // document.documentElement.setAttribute('data-theme', 'dark');
+    }
+  </script>
+</body>
+</html>

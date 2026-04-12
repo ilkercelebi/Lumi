@@ -1,0 +1,1 @@
+import{S as e}from"./config-B7scZ5KD.js";/* empty css              */document.querySelectorAll('[href="[APP_STORE_URL]"]').forEach(r=>r.href=e.appStoreUrl);document.querySelectorAll("footer .footer-bottom p")[0].innerHTML=`&copy; ${new Date().getFullYear()} ${e.companyName}. All rights reserved.`;window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;
