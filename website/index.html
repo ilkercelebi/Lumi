@@ -7,33 +7,23 @@
   <title>Lumi — Better Together</title>
   <meta name="description" content="Lumi is the ultimate relationship app for couples. Share memories, complete daily missions, and grow closer every day." />
   
-  <!-- Open Graph / Facebook -->
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="Lumi — Better Together" />
-  <meta property="og:description" content="The ultimate relationship companion for couples. Missions, memories, and more." />
-  <meta property="og:image" content="og-image.png" />
-
-  <!-- Twitter -->
-  <meta property="twitter:card" content="summary_large_image" />
-  <meta property="twitter:title" content="Lumi — Better Together" />
-  <meta property="twitter:description" content="The ultimate relationship companion for couples. Missions, memories, and more." />
-  
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="src/style.css" />
 </head>
 <body>
-  <header>
+  <header id="main-header">
     <div class="container">
       <nav>
-        <div class="logo">
+        <a href="index.html" class="logo">
           <span>✨</span> Lumi
-        </div>
+        </a>
         <ul class="nav-links">
           <li><a href="#features">Features</a></li>
           <li><a href="support.html">Support</a></li>
-          <li><a href="[APP_STORE_URL]" class="btn btn-primary" style="padding: 0.5rem 1.5rem;">Download</a></li>
+          <li><a href="[APP_STORE_URL]" class="btn btn-primary" style="padding: 0.7rem 1.5rem; font-size: 0.9rem;">Download</a></li>
         </ul>
       </nav>
     </div>
@@ -42,51 +32,64 @@
   <main>
     <section class="hero">
       <div class="container">
-        <h1>Connect deeper with your partner.</h1>
-        <p>Lumi helps you build lasting habits, share beautiful memories, and stay synchronized with your favorite person.</p>
-        <div class="hero-actions">
-          <a href="[APP_STORE_URL]" class="btn btn-primary">Download on App Store</a>
-        </div>
-        <div class="hero-image" style="margin-top: 4rem;">
-          <img src="mascot.png" alt="Lumi Mascot" style="max-width: 100%; height: auto; border-radius: var(--radius-lg); box-shadow: 0 20px 40px rgba(0,0,0,0.1);">
+        <div class="hero-content">
+          <div class="hero-text">
+            <h1>Better together,<br>every single day.</h1>
+            <p>Lumi helps you build lasting habits, share beautiful memories, and stay synchronized with your favorite person.</p>
+            <div class="hero-actions">
+              <a href="[APP_STORE_URL]" class="btn btn-primary">Get Started on App Store</a>
+            </div>
+          </div>
+          <div class="hero-visual">
+            <img src="assets/iphone-mockup.png" alt="Lumi App Mockup" class="iphone-mockup">
+          </div>
         </div>
       </div>
     </section>
 
     <section id="features" class="features">
       <div class="container">
-        <h2 style="text-align: center; margin-bottom: 3rem;">Designed for Modern Couples</h2>
+        <div class="section-header">
+          <h2>Designed for modern couples.</h2>
+          <p style="color: var(--color-text-muted); font-size: 1.25rem;">Everything you need to nurture your bond in one beautiful space.</p>
+        </div>
         <div class="features-grid">
-          <div class="feature-card">
-            <div class="icon">🚀</div>
+          <div class="feature-card glass">
+            <span class="icon">🚀</span>
             <h3>Daily Missions</h3>
             <p>Engaging tasks designed to spark conversation and create shared moments every day.</p>
           </div>
-          <div class="feature-card">
-            <div class="icon">📸</div>
+          <div class="feature-card glass">
+            <span class="icon">📸</span>
             <h3>Shared Timeline</h3>
             <p>Capture and organize your most precious memories in a beautiful, private space.</p>
           </div>
-          <div class="feature-card">
-            <div class="icon">🌈</div>
+          <div class="feature-card glass">
+            <span class="icon">🌈</span>
             <h3>Mood Sync</h3>
             <p>Stay aware of your partner's energy and mood to support each other better.</p>
           </div>
-          <div class="feature-card">
-            <div class="icon">🎁</div>
-            <h3>Gift Shop</h3>
-            <p>Earn coins through missions and exchange them for cute digital gifts for your partner.</p>
-          </div>
-          <div class="feature-card">
-            <div class="icon">❓</div>
-            <h3>Daily Questions</h3>
-            <p>Get to know each other on a deeper level with thought-provoking relationship prompts.</p>
-          </div>
-          <div class="feature-card">
-            <div class="icon">🔔</div>
-            <h3>Smart Notifications</h3>
-            <p>Never miss a mission or a memory update with timely, gentle reminders.</p>
-          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mascot-showcase">
+      <div class="container">
+        <div class="section-header">
+          <h2>Your Lumi Friends.</h2>
+          <p style="color: var(--color-text-muted); font-size: 1.25rem;">They grow with your relationship, reflecting your shared energy and mood.</p>
+        </div>
+        <img src="assets/couple-mascots.png" alt="Lumi Mascots" class="mascot-image">
+        <p style="font-weight: 600; color: var(--color-primary);">Meet Minty & Peachy</p>
+      </div>
+    </section>
+
+    <section style="padding: 10rem 0; text-align: center;">
+      <div class="container">
+        <div class="glass" style="padding: 6rem; border-radius: var(--radius-xl); background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark)); color: white;">
+          <h2 style="margin-bottom: 2rem;">Ready to connect deeper?</h2>
+          <p style="font-size: 1.5rem; margin-bottom: 3rem; opacity: 0.9;">Join thousands of couples strengthening their bond with Lumi.</p>
+          <a href="[APP_STORE_URL]" class="btn" style="background: white; color: var(--color-primary);">Download Now</a>
         </div>
       </div>
     </section>
@@ -96,7 +99,7 @@
     <div class="container">
       <div class="footer-content">
         <div class="footer-info">
-          <div class="logo footer-logo">✨ Lumi</div>
+          <div class="logo" style="margin-bottom: 2rem;"><span>✨</span> Lumi</div>
           <p style="color: var(--color-text-muted); max-width: 300px;">Making relationships stronger, one mission at a time. Designed with love for couples worldwide.</p>
         </div>
         <div class="footer-links">
@@ -112,13 +115,11 @@
           <ul>
             <li><a href="privacy.html">Privacy Policy</a></li>
             <li><a href="terms.html">Terms of Use</a></li>
-            <li><a href="support.html#data-deletion">Delete Data</a></li>
           </ul>
         </div>
       </div>
       <div class="footer-bottom">
-        <p>&copy; 2026 [COMPANY_NAME]. All rights reserved.</p>
-        <p style="margin-top: 0.5rem; font-size: 0.7rem;">Disclaimer: This website and its content are for informational purposes only.</p>
+        <p>&copy; 2026 Lumi Team. All rights reserved.</p>
       </div>
     </div>
   </footer>
@@ -128,12 +129,33 @@
     
     // Update placeholders
     document.querySelectorAll('[href="[APP_STORE_URL]"]').forEach(el => el.href = SITE_CONFIG.appStoreUrl);
-    document.querySelectorAll('footer .footer-bottom p')[0].innerHTML = `&copy; ${new Date().getFullYear()} ${SITE_CONFIG.companyName}. All rights reserved.`;
+    
+    // Header shadow on scroll
+    const header = document.getElementById('main-header');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
 
-    // Dark mode simple toggle (manual for now or based on system)
-    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-       // document.documentElement.setAttribute('data-theme', 'dark');
-    }
+    // Simple reveal animation
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.opacity = '1';
+          entry.target.style.transform = 'translateY(0)';
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.feature-card, .section-header, .mascot-image').forEach(el => {
+      el.style.opacity = '0';
+      el.style.transform = 'translateY(30px)';
+      el.style.transition = 'all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275)';
+      observer.observe(el);
+    });
   </script>
 </body>
 </html>
