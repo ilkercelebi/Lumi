@@ -1,1 +1,0 @@
-import{S as t}from"./config-B7scZ5KD.js";/* empty css              */document.querySelectorAll(".site-config-supportEmail").forEach(o=>o.textContent=t.supportEmail);document.querySelectorAll(".site-config-companyName").forEach(o=>o.textContent=t.companyName);document.querySelectorAll(".site-config-mailto").forEach(o=>o.href=`mailto:${t.supportEmail}`);
